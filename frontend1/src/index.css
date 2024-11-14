@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.app{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  
+  
+}
+.container{
+  position: relative;
+  top: 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+h1{
+  text-align: center;
+}
+.input , .tasks{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  
+}
+
+.input > input{
+  height: 30px;
+  width: 250px;
+  border-radius: 3px;
+  border: 2px black solid;
+  font-weight: 700;
+}
+.input > button{
+  width: 80px;
+  height: 35px;
+  background-color: #000;
+  color: white;
+  border-radius: 5px;
+  border-style: none;
+  font-weight: 700;
+}
+.input > button:hover{
+  background-color: white;
+  color: #000;
+  border:2px solid black
+}
+.list{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  
+}
+.tasks {
+  height: 50px;
+  width: 350px;
+  background-color: #000;
+  border-radius: 5px;
+  color: white;
+  font-size: large;
+  gap:20px;
+  align-items: center;
+  padding-left: 20px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+.tasks > .icons{
+  font-size:x-large;
+}
+
+.edit:hover{
+  color: lightskyblue;
+}
+ .delete:hover{
+  color: rgb(183, 80, 80);
+}
+
+.icons{
+  display: flex;
+  gap: 10px;
+}
